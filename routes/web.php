@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@excel_upload_form');
+
+Route::post('/', 'HomeController@process_excel_upload');

@@ -22,9 +22,7 @@ class CreatePatientsTable extends Migration
 
             $table->string('family_name')->index();
 
-            $table->integer('uid')->index();
-
-            $table->timestamps();
+            $table->bigInteger('uid')->index();
         });
     }
 
